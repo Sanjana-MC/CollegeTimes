@@ -1,0 +1,78 @@
+<html>
+    <head>
+      <title>
+        Sign In
+      </title>
+      <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+      <link href="C:\xampp\htdocs\COLLEGE_TIMES CODE\INDEX\assets\img\CTlogo.jpeg" rel="icon">
+      <link href="C:\xampp\htdocs\COLLEGE_TIMES CODE\INDEX\assets\img\CTlogo.jpeg" rel="apple-touch-icon">
+      <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+      <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+      <style>
+           @import url("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+          .login-block{
+            background: #0052D4;  
+          background: -webkit-linear-gradient(to bottom, #6FB1FC, #4364F7, #0052D4);  
+          background: linear-gradient(to bottom, #6FB1FC, #4364F7, #0052D4); 
+
+          float:left;
+          width:100%;
+          padding : 50px 0;
+          }
+          .banner-sec{background:url(https://static.pexels.com/photos/33972/pexels-photo.jpg)  no-repeat left bottom; background-size:cover; min-height:500px; border-radius: 0 10px 10px 0; padding:0;}
+          .container{background:#fff; border-radius: 10px; box-shadow:15px 20px 0px rgba(0,0,0,0.1);}
+          .carousel-inner{border-radius:0 10px 10px 0;}
+          .carousel-caption{text-align:left; left:5%;}
+          .login-sec{padding: 50px 30px; position:relative;}
+          .login-sec .copy-text{position:absolute; width:80%; bottom:20px; font-size:13px; text-align:center;}
+          .login-sec .copy-text i{color:#007bff ;}
+          .login-sec .copy-text a{color:#E36262;}
+          .login-sec h2{margin-bottom:30px; font-weight:800; font-size:30px; color: #00366f;}
+          .login-sec h2:after{content:" "; width:100px; height:5px; background:#007bff ; display:block; margin-top:20px; border-radius:3px; margin-left:auto;margin-right:auto}
+          .btn-login{background: #00366f ; color:#fff; font-weight:600;}
+          .banner-text{width:70%; position:absolute; bottom:40px; padding-left:20px;}
+          .banner-text h2{color:#fff; font-weight:600;}
+          .banner-text h2:after{content:" "; width:100px; height:5px; background:#FFF; display:block; margin-top:20px; border-radius:3px;}
+          .banner-text p{color:#fff;}
+      </style>
+    </head>
+    <body>
+      <section class="login-block">
+          <div class="container">
+        <div class="row">
+          <div class="col-md-4 login-sec">
+              <h2 class="text-center">Login Now</h2>
+              <!--Login Form-->
+              <form class="login-form" action ="signin.php" method="POST">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1" class="text-uppercase">Username</label>
+                    <input type="text" class="form-control" name="username" placeholder="Enter your UserID" required>                    
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1" class="text-uppercase">Password</label>
+                    <input type="password" class="form-control" name="password" required placeholder="Enter Password">
+                  </div>  
+                <div class="form-check">     
+                  <input type="submit" class="btn btn-login float-right" value="Submit"></input>
+                </div>   
+              </form>
+              <a href="http://localhost/COLLEGE_TIMES%20CODE/INDEX/index.html"><input type="submit" class="btn btn-login float-left" value="Back"></input></a>
+              <br>
+              <br>
+              <br>
+              <a href="signup.html"><input type="submit" class="btn btn-login float-right" value="Not Registered? Sign Up"></input></a>
+              <div class="copy-text"><a href="http://localhost/COLLEGE_TIMES%20CODE/MODULE%201/forgot.html"><font color="#007bff">forgot password?</font></a></div>
+                  </div>
+                  <div class="col-md-8 banner-sec">         
+                  <class class="carousel-item active">
+                      <img class="d-block img-fluid" src="https://static.pexels.com/photos/33972/pexels-photo.jpg" alt="First slide">
+                      <div class="carousel-caption d-none d-md-block">
+                      <div class="banner-text">
+                      <h2>College Times</h2>
+                      </div>	
+                    </div>
+                 </class>
+              </div>
+        </section>
+    </body>
+</html>
